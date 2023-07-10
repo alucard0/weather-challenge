@@ -6,7 +6,7 @@ type AirPollutionProps = {
   co: Number
   no2: Number
   o3: Number
-  pm25: Number
+  pm2_5: Number
   pm10: Number
 }
 
@@ -14,7 +14,7 @@ const AirPollution: FC<AirPollutionProps> = ({
   co,
   no2,
   o3,
-  pm25,
+  pm2_5: pm25,
   pm10,
 }): JSX.Element => (
   <AirPollutionContainer>

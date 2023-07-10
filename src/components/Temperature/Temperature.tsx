@@ -16,7 +16,7 @@ const Temperature: React.FC<TemperatureProps> = ({
   <TemperatureContainer>
     <Image src={imageSrc} alt={altText} />
     <StyledValue>{`${value}`}</StyledValue>
-    <TemperatureLabel>°C | °F</TemperatureLabel>
+    <TemperatureLabel>°C</TemperatureLabel>
   </TemperatureContainer>
 )
 

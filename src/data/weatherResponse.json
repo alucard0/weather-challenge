@@ -1,0 +1,51 @@
+{
+  "location": {
+      "name": "Mexico City",
+      "region": "The Federal District",
+      "country": "Mexico",
+      "lat": 19.43,
+      "lon": -99.13,
+      "tz_id": "America/Mexico_City",
+      "localtime_epoch": 1689008023,
+      "localtime": "2023-07-10 10:53"
+  },
+  "current": {
+      "last_updated_epoch": 1689007500,
+      "last_updated": "2023-07-10 10:45",
+      "temp_c": 21.0,
+      "temp_f": 69.8,
+      "is_day": 1,
+      "condition": {
+          "text": "Partly cloudy",
+          "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+          "code": 1003
+      },
+      "wind_mph": 4.3,
+      "wind_kph": 6.8,
+      "wind_degree": 140,
+      "wind_dir": "SE",
+      "pressure_mb": 1028.0,
+      "pressure_in": 30.37,
+      "precip_mm": 0.0,
+      "precip_in": 0.0,
+      "humidity": 56,
+      "cloud": 75,
+      "feelslike_c": 21.0,
+      "feelslike_f": 69.8,
+      "vis_km": 8.0,
+      "vis_miles": 4.0,
+      "uv": 4.0,
+      "gust_mph": 2.5,
+      "gust_kph": 4.0,
+      "air_quality": {
+          "co": 781.0999755859375,
+          "no2": 20.700000762939453,
+          "o3": 1.2999999523162842,
+          "so2": 40.5,
+          "pm2_5": 15.699999809265137,
+          "pm10": 19.700000762939453,
+          "us-epa-index": 2,
+          "gb-defra-index": 2
+      }
+  }
+}
