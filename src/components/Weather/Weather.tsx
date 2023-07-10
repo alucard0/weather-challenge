@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent } from "react"
-import { WeatherContainer } from "./Weather.style"
+import { WeatherContainer, WeatherWrapper } from "./Weather.style"
 import Temperature from "../Temperature/Temperature"
 import Forecast from "../Forecast/Forecast"
 import AirPollution from "../AirPollution/AirPollution"
@@ -30,7 +30,7 @@ const Weather = (): JSX.Element => {
   const { text, icon } = weatherInformation.current.condition
 
   return (
-    <>
+    <WeatherWrapper>
       <Select options={USA_STATES} onChange={onChangeState} />
       <WeatherContainer>
         <Resume weatherCondition={text} />
@@ -38,7 +38,7 @@ const Weather = (): JSX.Element => {
         <Forecast wind={wind} humidity={humidity} precipitation={precipitation} />
         {airQuality && <AirPollution {...airQuality} />}
       </WeatherContainer>
-    </>
+    </WeatherWrapper>
   )
 }
 
