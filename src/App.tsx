@@ -1,5 +1,6 @@
 import logo from "./logo.svg"
 import "./App.css"
+import Weather from "./components/Weather/Weather"
 
 function App(): JSX.Element {
   return (
@@ -18,6 +19,7 @@ function App(): JSX.Element {
           Learn React
         </a>
       </header>
+      <Weather />
     </div>
   )
 }
