@@ -6,6 +6,7 @@ import AirPollution from "../AirPollution/AirPollution"
 import { useFetchWeatherInformation } from "src/hooks/useFetchWeatherInformation/useFetchWeatherInformation"
 import { USA_STATES } from "src/data/usaStates"
 import Select from "../Select/Select"
+import Resume from "../Resume/Resume"
 
 const Weather = (): JSX.Element => {
   const [currentUsaState, setCurrentUsaState] = useState("Montgomery")
@@ -29,13 +30,15 @@ const Weather = (): JSX.Element => {
   const { text, icon } = weatherInformation.current.condition
 
   return (
-    <WeatherContainer>
-      <p>Weather</p>
+    <>
       <Select options={USA_STATES} onChange={onChangeState} />
-      <Temperature value={tempC} imageSrc={icon} altText={text} />
-      <Forecast wind={wind} humidity={humidity} precipitation={precipitation} />
-      {airQuality && <AirPollution {...airQuality} />}
-    </WeatherContainer>
+      <WeatherContainer>
+        <Resume weatherCondition={text} />
+        <Temperature value={tempC} imageSrc={icon} altText={text} />
+        <Forecast wind={wind} humidity={humidity} precipitation={precipitation} />
+        {airQuality && <AirPollution {...airQuality} />}
+      </WeatherContainer>
+    </>
   )
 }
 
