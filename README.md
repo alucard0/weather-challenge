@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Prerequisites
+
+- Node version: v16.18.0
+- Clone the project.
+- Run NPM install, for dependencies installation.
+- This project uses [weather api](https://www.weatherapi.com/)
+- In the root folder, you must create a .env file with the following variable REACT_APP_WEATHER_API=a7485a2156884cf280e13119231007
+
 ## Available Scripts
 
 In the project directory, you can run:
