@@ -4,7 +4,7 @@ const customConfig: Config.InitialOptions = {
   rootDir: "./",
   testEnvironment: "jsdom",
   preset: "ts-jest",
-  testMatch: ["<rootDir>/__tests__/**/*.test.{ts,tsx}"],
+  testMatch: ["<rootDir>/**/__tests__/**/*.test.{ts,tsx}"],
   clearMocks: true,
   collectCoverage: true,
   coverageDirectory: "coverage",
