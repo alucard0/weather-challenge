@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live
+
+[Weather app](https://weather-challenge-9a2a7.web.app/)
+
 ## Prerequisites
 
 - Node version: v16.18.0
